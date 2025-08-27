@@ -9,6 +9,7 @@
     [bio]             NVARCHAR (500)   NULL,
     [fechaCreacion]   DATETIME2 (7)    DEFAULT (sysdatetime()) NOT NULL,
     [idEstado]        INT              NOT NULL,
+    [fechaNacimiento] DATETIME2 (7)    NULL,
     PRIMARY KEY CLUSTERED ([idUsuario] ASC),
     FOREIGN KEY ([idEstado]) REFERENCES [dbo].[estado] ([idEstado]),
     UNIQUE NONCLUSTERED ([telefono] ASC),
